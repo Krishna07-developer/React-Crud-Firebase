@@ -74,6 +74,7 @@ const AddBook = ({id,setBookId}) => {
   },[id])
   return (
     <div>
+      <div style={{color : 'brown'}}>List of Book Details:</div>
       <form style={{display:'flex',flexDirection : 'column',gap:'20px'}} onSubmit={handleSubmit}>
         <input type="text" placeholder='BookTitle' name='title' value={bookslist.title}  onChange={handleChange}/>
         <input type="text" placeholder='BookAuthor' name='author' value={bookslist.author} onChange={handleChange}/>
